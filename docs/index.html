@@ -1,0 +1,194 @@
+<!doctype html><html lang="en" translate="no" class="notranslate"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" content="notranslate">
+<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
+<title>Krathong, Drawn · กระทง วาดด้วยคณิต</title>
+<meta name="description" content="How a krathong is folded from banana leaf, why it floats and stays upright, and where the Ping carries it after Loy Krathong, drawn with math.">
+<meta name="theme-color" content="#06202e">
+<link rel="canonical" href="https://motdang.net/sites/krathong/">
+<link rel="alternate" hreflang="en" href="https://motdang.net/sites/krathong/"><link rel="alternate" hreflang="th" href="https://motdang.net/sites/krathong/th/"><link rel="alternate" hreflang="x-default" href="https://motdang.net/sites/krathong/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Krathong, Drawn · กระทง วาดด้วยคณิต">
+<meta property="og:title" content="Krathong, Drawn"><meta property="og:description" content="How a krathong is folded from banana leaf, why it floats and stays upright, and where the Ping carries it after Loy Krathong, drawn with math."><meta property="og:url" content="https://motdang.net/sites/krathong/">
+<meta property="og:image" content="https://motdang.net/sites/krathong/card.jpg"><meta property="og:image:secure_url" content="https://motdang.net/sites/krathong/card.jpg"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Krathongs with candles drifting down the Ping River at night under a full moon, drawn with math">
+<meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="th_TH">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://motdang.net/sites/krathong/card.jpg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="https://motdang.net/sites/krathong/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Serif+Thai:wght@600;700&display=swap" rel="stylesheet">
+<script>if(/[?&]card/.test(location.search))document.documentElement.classList.add("card")</script>
+<style>:root{--cave:#06202e;--rock:#0d3a3a;--rock2:#124a44;--ink:#f1fff4;--dim:#b8dccb;--lamp:#ffc233;--water:#7cc8ff;--deep:#7a1f17;--line:#9be38c;--paper:#fbfbef;--pink:#ff8f7a;--pinkd:#c4402a;--text:#14281c;--mute:#6a5a48;--rule:#e2d4b8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 "Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif}
+html[lang=th] body{font-size:18px;line-height:1.75}
+a{color:#1f6b2c}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+h1,h2,h3{font-family:Fraunces,"Noto Serif Thai",Georgia,serif;font-weight:700;line-height:1.15;margin:0 0 .4em}
+html[lang=th] h1,html[lang=th] h2,html[lang=th] h3{font-family:"Noto Serif Thai",Fraunces,serif;line-height:1.35}
+h2{font-size:clamp(28px,4.6vw,46px)}
+h3{font-size:22px}
+.in{max-width:1080px;margin:0 auto;padding:0 16px}
+.kick{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 .5em;font-weight:600}
+html[lang=th] .kick{text-transform:none;letter-spacing:0}
+.intro{font-size:19px;max-width:44em}
+.sec{padding:72px 0}
+.sec p{max-width:44em}
+.dark{background:var(--cave);color:var(--ink)}
+.dark a{color:var(--lamp)}
+.dark .kick{color:var(--dim)}
+.rock{background:var(--rock);color:var(--ink)}
+.rock a{color:var(--lamp)}
+.rock .kick{color:var(--dim)}
+canvas{display:block;width:100%;touch-action:pan-y}
+.cv{border-radius:14px;background:#06202e}
+.note{font-size:14px;color:var(--mute);margin-top:.6em}
+.dark .note,.rock .note{color:var(--dim)}
+/* top bar */
+header.top{position:sticky;top:0;z-index:20;background:rgba(6,32,46,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink);transition:transform .25s}
+header.top .in{display:flex;align-items:center;gap:14px;min-height:52px;max-width:1240px}
+.brand{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:700;white-space:nowrap}
+.brand svg{width:28px;height:28px}
+header.top nav{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;flex:1;font-size:15px}
+header.top nav::-webkit-scrollbar{display:none}
+header.top nav a{color:var(--dim);text-decoration:none;white-space:nowrap;padding:6px 0}
+header.top nav a:hover{color:var(--lamp)}
+.lang{white-space:nowrap;font-size:15px;color:var(--dim)}
+.lang a{color:var(--lamp)}
+body.nav-away header.top{transform:translateY(-100%)}
+@media (max-width:720px){.brand span{display:none}}
+/* hero */
+.hero{position:relative;background:var(--cave);color:var(--ink);overflow:hidden}
+.hero canvas{height:min(78vh,720px);min-height:460px}
+.hero-t{position:absolute;left:0;right:0;top:0;padding:28px 16px 0;max-width:1080px;margin:0 auto;pointer-events:none}
+.hero-t h1{font-size:clamp(38px,7.4vw,86px);margin:0;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.hero-t .kick{color:#fff0b8;text-shadow:0 1px 8px #000}
+.hero-t .lede{font-size:clamp(17px,2.2vw,21px);max-width:30em;text-shadow:0 1px 10px #000;margin:.4em 0 0}
+.tbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:12px 16px 18px;max-width:1080px;margin:0 auto}
+.tbar input[type=range]{flex:1 1 280px;accent-color:var(--lamp);min-height:32px}
+.tdate{font-weight:700;min-width:9em;font-variant-numeric:tabular-nums}
+.tev{flex:1 1 100%;margin:0;min-height:3.4em;color:#e9e3d4;font-size:17px;max-width:46em}
+.pill{font:inherit;font-size:15px;border:1.5px solid currentColor;background:transparent;color:inherit;border-radius:999px;padding:6px 14px;cursor:pointer;min-height:36px}
+.pill.hot{background:var(--lamp);color:#1a1400;border-color:var(--lamp);font-weight:700}
+.pill[aria-pressed=true]{background:var(--ink);color:var(--cave)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+html.card header.top,html.card .tbar,html.card main>section:not(.hero),html.card footer{display:none}
+html.card .hero canvas{height:100vh;min-height:0}
+html.card .hero-t{padding-top:46px;padding-left:56px;max-width:none}
+html.card .hero-t h1{font-size:96px}
+.ph{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:20px}
+.ph figure{margin:0}
+.ph img{width:100%;height:auto;border-radius:10px;display:block;background:#ddd}
+.ph figcaption{font-size:14px;color:var(--mute);margin-top:6px;line-height:1.5}
+.dark .ph figcaption,.rock .ph figcaption{color:var(--dim)}
+.src{font-size:15px;padding-left:1.2em}
+.src li{margin:.3em 0}
+footer.bot{background:var(--cave);color:var(--dim);padding:28px 0;font-size:14px}
+footer.bot a{color:var(--lamp)}
+.math{font-family:"STIX Two Math","Cambria Math",Georgia,serif;font-size:1.15em;background:rgba(255,194,51,.14);border-radius:6px;padding:1px 7px;white-space:nowrap}
+.dark .math,.rock .math{background:rgba(255,194,51,.16);color:#ffe6a0}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.seg .pill{font-size:14px;padding:5px 12px;min-height:34px}
+.seg .pill[aria-pressed=true]{background:var(--lamp);color:#1a1400;border-color:var(--lamp)}
+.fz{margin-top:8px}
+.fz b{font-size:19px;color:var(--lamp)}
+.fz p{margin:.2em 0 0}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.steps .pill{min-width:40px}
+.steptext{min-height:4.8em;margin:.4em 0 0}
+.glos{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:20px}
+.glos div{background:#fbfff4;border:1px solid var(--rule);border-radius:12px;padding:12px 14px}
+.glos b{display:block;font-size:20px;font-family:"Noto Serif Thai",Fraunces,serif}
+.glos i{font-style:normal;color:var(--mute);font-size:14px}
+.glos p{margin:.3em 0 0;font-size:15px}
+#owncv{cursor:crosshair;touch-action:none}
+.cv{background:#06202e}
+.hero{background:#06202e}
+.lede-wrap{max-width:46em}
+html.card .cardline{display:block}
+.cardline{display:none;font-size:22px;color:#fff0b8;margin-top:16px;text-shadow:0 1px 8px #000}
+.cardline span{font-size:18px;color:var(--lamp)}
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.readout{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.readout div{background:rgba(255,255,255,.06);border-radius:10px;padding:10px 12px}
+.sec:not(.dark):not(.rock) .readout div{background:#e6f3d6}
+.readout span{display:block;font-size:13px;color:var(--dim)}
+.sec:not(.dark):not(.rock) .readout span{color:var(--mute)}
+.readout b{font-size:22px;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--lamp);min-height:32px}
+label.lab{display:block;font-size:15px;margin-top:10px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.ph img{max-height:560px;object-fit:contain;background:transparent}
+html.card .lede{display:none}
+.warn{background:#ffe1dc;color:#7a1408;border-radius:10px;padding:10px 14px;margin:12px 0;font-weight:600}
+.dark .warn,.rock .warn{background:rgba(255,120,100,.18);color:#ffd2c8}
+.eq{font-family:"STIX Two Math","Cambria Math",Georgia,serif;font-size:1.25em;margin:.6em 0;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,.07);display:inline-block}
+.sec:not(.dark):not(.rock) .eq{background:#fff;border:1px solid var(--rule)}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:18px 0}
+.dates div{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:12px 14px}
+.dark .dates div,.rock .dates div{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.dates b{display:block;font-size:19px}
+.dates span{font-size:14px;color:var(--mute)}
+.dark .dates span,.rock .dates span{color:var(--dim)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:8px 0}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.roman{color:var(--mute);font-style:normal;font-size:.9em}
+.dark .roman,.rock .roman{color:var(--dim)}
+.sib{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:14px;padding:14px 16px;margin-top:22px;text-decoration:none;color:inherit;max-width:44em}
+.sib b{display:block;font-size:19px}
+.sib:hover{border-color:var(--lamp)}
+.hero-t .hint{font-size:15px;opacity:.85;margin-top:.6em;text-shadow:0 1px 8px #000}
+html.card .hint{display:none}
+</style>
+</head><body>
+<header class="top"><div class="in"><a class="brand" href="#top"><img src="icon.svg" width="28" height="28" alt=""><span>Krathong, Drawn</span></a>
+<nav aria-label="Sections"><a href="#what">What it is</a><a href="#fold">Fold a petal</a><a href="#rings">Rings</a><a href="#float">Will it float</a><a href="#river">Downstream</a><a href="#after">The morning after</a><a href="#yipeng">2026</a><a href="#words">Words</a><a href="#sources">Sources</a></nav>
+<span class="lang"><b>EN</b> | <a href="th/" hreflang="th">ไทย</a></span></div></header>
+<main><section id="top" class="hero"><canvas id="scene" role="img" aria-label="The Ping River at night with krathongs drifting downstream, candles lit"></canvas>
+<div class="hero-t"><p class="kick">Loy Krathong · Yi Peng · the Ping</p><h1>Krathong, Drawn</h1><p class="lede">A slice of banana trunk, folded leaf, flowers, a candle and three sticks of incense. How the petals are folded, why it floats, and where the river takes it, drawn with the same sums the water uses.</p><p class="hint">Tap the water to float one.</p><p class="cardline">Folding the leaf, floating, and the river<br><span>motdang.net/sites/krathong</span></p></div></section>
+<section id="what" class="sec"><div class="in"><p class="kick">What it is</p><h2>A lotus of leaf on a slice of trunk</h2><p>The old base is a slice of banana trunk, หยวกกล้วย <i>yuak kluai</i>, cut about 1.5 to 2 inches thick. Strips of banana leaf, ใบตอง <i>bai tong</i>, are folded into petals and pinned round its rim. The best leaf for folding is from กล้วยตานี, <i>kluai tani</i>: glossy, dark green, tough and soft, hard to tear. On top go flowers, a candle and three sticks of incense. Some people add coins, or a cut fingernail or a few hairs to shed bad luck.</p><p>The Department of Cultural Promotion lists the reasons people give for floating one: to honour the Buddha's footprint on the sandbank of the Narmada river in India; to thank Phra Mae Khongkha, the mother of water, and ask her pardon for using and dirtying it; to float bad luck away; to make a wish; to remember the dead. The story of Nang Noppamat, who folded the first leaf krathong for Phra Ruang of Sukhothai, comes from a book that Prince Damrong dated to the reign of Rama III.</p><p>In Lanna the night is Yi Peng, the full moon of the second Lanna month. Chiang Mai's National Museum tells of <i>loi khamot</i>, floating fire: Mon people of Hariphunchai, about 1,000 years ago, floated flowers, candles and goods in boat-shaped <i>sapao</i> down the Ping to remember kin they had left in Pegu. Princess Dara Rasmi floated candles on coconut-husk boats in Chiang Mai around 1917–1927; the leaf krathong caught on after 1947, and from 1969 the big-krathong parade has run to Nawarat Bridge.</p></div></section>
+<section id="fold" class="sec dark"><div class="in two"><div><canvas id="foldcv" class="cv" role="img" aria-label="Three folds make a point"></canvas></div>
+<div><p class="kick">Fold a petal</p><h2>Three folds make a point</h2><p>A strip of banana leaf about 1.5 inches (3.8 cm) wide. Fold the two top corners down so their edges meet in the middle, then fold it in half: this is how a กลีบกุหลาบ, <i>klip kulap</i> or rose petal, begins. Each fold turns part of the leaf over a straight line, half a turn, so it lands face down on the rest.</p>
+<div class="steps" role="group" aria-label="Three folds make a point"><button class="pill" type="button" data-fstep="0" aria-pressed="false">1</button><button class="pill" type="button" data-fstep="1" aria-pressed="false">2</button><button class="pill" type="button" data-fstep="2" aria-pressed="false">3</button><button class="pill" type="button" data-fstep="3" aria-pressed="false">4</button><button id="fplay" class="pill hot" type="button">Fold it</button></div>
+<p id="foldtext" class="steptext" aria-live="polite"></p><p>Fold one corner down to the middle line and the edge turns through 45°. Fold the other corner and the two meet in a point with a right angle at the tip. Fold that in half and the tip closes to 45°. For a rose petal the folded spine is then rolled into a curve, and petals are slipped one into the next and sewn into a long band that wraps the rim like a crown. A craft book from 2012 lists more than 70 named petals, among them กลีบผกา <i>klip phaka</i>, กลีบเล็บมือนาง <i>klip lep mue nang</i> (the lady's fingernail) and a Lanna-style กลีบหน้านาค, the naga face.</p><p class="note">The shiny face of the leaf is dark green and the matt back is light. The thin lines are the leaf's veins: each one is a straight line on the flat strip and stays straight through every fold. Only the top of the strip is drawn; the rest, about 15 cm long in all, is trimmed at the base.</p></div></div></section>
+<section id="rings" class="sec"><div class="in two"><div><canvas id="ringcv" class="cv" role="img" aria-label="How many petals go round"></canvas></div>
+<div><p class="kick">Rings</p><h2>How many petals go round</h2><p>Petals go round the base in rings, each tucked into the next. How many depends on the size of the base. The rim of a ring is 2πr long, and each petal takes up its width less the part hidden under its neighbour. Each ring here sits a little inside the one below and half a petal round, so the points of one ring fall between the points of the next, as they do in photographs of krathongs.</p>
+<p class="eq">petals in a ring = ⌊ 2πr ÷ (w × (1 − overlap)) ⌋</p>
+<label class="lab" for="rd">Base across <b id="rdo"></b></label><input id="rd" type="range" min="12" max="40" step="1" value="22"><label class="lab" for="rw">Petal width <b id="rwo"></b></label><input id="rw" type="range" min="15" max="60" step="1" value="30"><label class="lab" for="rn">Rings <b id="rno"></b></label><input id="rn" type="range" min="1" max="5" step="1" value="3"><label class="lab" for="rl">Overlap <b id="rlo"></b></label><input id="rl" type="range" min="0" max="60" step="1" value="35">
+<div class="readout"><div><span>Petals, ring by ring</span><b id="rper">–</b></div><div><span>Petals in all</span><b id="rtot">–</b></div><div><span>Pins, one a petal</span><b id="rleaf">–</b></div></div>
+<p class="note">Each ring here is 17% smaller across than the one under it.</p></div></div></section>
+<section id="float" class="sec rock"><div class="in"><p class="kick">Will it float</p><h2>Down until it has pushed aside its own weight</h2><p>A krathong sinks into the river until the water it pushes aside weighs as much as the krathong. For a round base that gives the depth at the waterline. What is left of the base above the water is how much more it can carry.</p><p>Floating is half of it. It also has to stay upright. Tip it a little and the water under it shifts to the low side, pushing back. That push acts through a point called the metacentre, M. While M sits above the centre of all the krathong's weight, G, it rights itself.</p>
+<p class="eq">depth = mass ÷ (ρ<sub>water</sub> × πr²) &nbsp;&nbsp; GM = KB + r² ÷ (4 × depth) − KG</p>
+<canvas id="floatcv" class="cv" role="img" aria-label="Down until it has pushed aside its own weight"></canvas>
+<p class="legend"><span><i style="background:#c2410c"></i>G, centre of weight</span><span><i style="background:#1d4ed8"></i>M, metacentre</span></p>
+<div class="readout" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"><div><label class="lab" for="bd">Base across <b id="bdo"></b></label><input id="bd" type="range" min="8" max="50" step="1" value="25"></div><div><label class="lab" for="bt">Base thickness <b id="bto"></b></label><input id="bt" type="range" min="1" max="8" step="0.5" value="4"></div><div><label class="lab" for="brho">Banana trunk, density <b id="brhoo"></b></label><input id="brho" type="range" min="300" max="950" step="10" value="600"></div><div><label class="lab" for="bl">Leaves, flowers, candle <b id="blo"></b></label><input id="bl" type="range" min="20" max="600" step="5" value="120"></div><div><label class="lab" for="bh">Candle height <b id="bho"></b></label><input id="bh" type="range" min="3" max="40" step="1" value="10"></div></div>
+<div class="btns"><button id="bcoin" class="pill hot" type="button">Add five ฿1 coins</button><button id="bclear" class="pill" type="button">Take the coins off</button></div>
+<p><b id="bstate"></b></p>
+<div class="readout"><div><span>All of it weighs</span><b id="bmass">–</b></div><div><span>Under the water</span><b id="bsink">–</b></div><div><span>Above the water</span><b id="bfree">–</b></div><div><span>M above G</span><b id="bgm">–</b></div><div><span>Lean in a 3 m/s breeze</span><b id="bheel">–</b></div><div><span>Coins on it</span><b id="bcount">–</b></div><div><span>฿1 coins to sink it</span><b id="bcoins">–</b></div></div>
+<p>A wide base is very hard to tip: the r² in the sum grows fast. A narrow base with a tall candle is the one that rolls over.</p><p class="note">Nobody has published the density of a fresh slice of banana trunk. Its fibres are denser than water, 1.1 to 1.5 g/cm³; it floats because of the air spaces between its sheaths. The 600 kg/m³ here is the page's guess: move it and see. A ฿1 coin is taken as 3 g.</p></div></section>
+<section id="river" class="sec"><div class="in"><p class="kick">Downstream</p><h2>Fast in the middle, slow at the banks</h2><p>Water drags on the riverbed and the banks, so it runs fastest in the middle of the river and slowest at the edges. Sixty krathongs, let go from one bank, wander out into the current a little at a time. Some get caught where the water barely moves.</p>
+<p class="eq">speed = u<sub>max</sub> × (1 − |2y ÷ W|<sup>p</sup>)</p>
+<canvas id="rivercv" class="cv" role="img" aria-label="Fast in the middle, slow at the banks"></canvas>
+<p class="legend"><span><i style="background:#2f8a3c"></i>drifting</span><span><i style="background:#7a5b2a"></i>caught at the bank</span></p>
+<div class="readout" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))"><div><label class="lab" for="vmax">Speed in the middle <b id="vmaxo"></b></label><input id="vmax" type="range" min="10" max="150" step="1" value="80"></div><div><label class="lab" for="vp">Shape of the current (p) <b id="vpo"></b></label><input id="vp" type="range" min="10" max="80" step="1" value="20"></div></div>
+<div class="btns"><button id="vagain" class="pill hot" type="button">Let them go again</button></div>
+<div class="readout"><div><span>River time</span><b id="vclock">–</b></div><div><span>Average across</span><b id="vmean">–</b></div><div><span>Middle, in one hour</span><b id="v1h">–</b></div><div><span>Middle, by morning (8 h)</span><b id="vnight">–</b></div><div><span>Caught at the bank</span><b id="vstuck">–</b></div></div>
+<p id="vlive" class="note" data-src="https://motdang.net/data/ping.json"></p>
+<p>At Nawarat Bridge the Royal Irrigation Department's gauge, P.1, has measured the Ping since 1921. Its November average is about 62 m³ of water a second. At a usual November flow the river there is about 80 m wide, and the water moves 0.5 to 0.7 m/s on average across it, worked from the department's rating curve and its 2025 survey of the riverbed. That is 2 km or so an hour.</p><p>A bigger p means an even current across most of the river with the slowing squeezed against the banks. The average speed across the river is u<sub>max</sub> × p ÷ (p + 1). Krathongs that make it downstream pile up at the Tha Wang Tan weir, where volunteers clear them.</p><p class="note">The river is drawn 80 m wide. Each krathong takes a small random step across the current every moment, so where it ends up is luck as well as speed.</p></div></section>
+<section id="after" class="sec dark"><div class="in"><p class="kick">The morning after</p><h2>Counted the next day</h2><p>Bangkok counts the krathongs it pulls out of its rivers and canals the next morning. In 2015 it collected 825,614; in 2025, 391,027, 53% fewer. Foam was 8.6% of the count in 2015 and its lowest share, 1.6%, came in 2024.</p>
+<canvas id="aftercv" class="cv" role="img" aria-label="Counted the next day"></canvas>
+<p class="legend"><span><i style="background:#3c9c45"></i>natural</span><span><i style="background:#e05a7a"></i>foam</span><span><i style="background:#e3a23b"></i>bread</span></p>
+<p>In 2025 the city counted bread krathongs on their own for the first time: 39,103. The city's environment office gives banana trunk and leaf about 14 days to break down, bread and ice-cream cones about 3 days, and foam about 50 years. A search of Thai and English news from 2013 to 2025 turned up no count for Chiang Mai.</p><p class="note">Counts from Bangkok Metropolitan Administration figures as reported by Thai PBS, Sanook, InfoQuest, Thairath, PPTV, Khaosod English and the Bangkok Post. 2015 and 2016 are from English-language reports.</p></div></section>
+<section id="yipeng" class="sec"><div class="in"><p class="kick">2026</p><h2>Tuesday 24 November</h2><p>Loy Krathong 2026 falls on Tuesday 24 November, the fifteenth night of the waxing moon of the twelfth month. Chiang Mai city's Yi Peng runs 23 to 25 November:</p>
+<div class="dates"><div><b>Mon 23 Nov</b><span>the city's Yi Peng begins</span></div><div><b>Tue 24 Nov</b><span>full moon, 21:53; Loy Krathong</span></div><div><b>Wed 25 Nov</b><span>the big-krathong parade</span></div></div><p>In 2025 the city floated from Tha Phae Gate, Tha Phae Road, the municipal offices, the Mae Kha canal and Si Khong landing, and from the foot of Nawarat Bridge. The municipality ties bamboo rafts on the Ping near its offices for people to float from.</p><p>The city has asked hotels to stop guests letting sky lanterns go inside the city.</p>
+<a class="sib" href="https://motdang.net/sites/khom-loi/"><img src="https://motdang.net/sites/khom-loi/icon.svg" width="48" height="48" alt=""><span><b>Khom Loi, Drawn</b> The same night in the sky: why a lantern rises, how high it goes, and where it lands.</span></a></div></section>
+<section id="pictures" class="sec rock"><div class="in"><p class="kick">Pictures</p><h2>Krathongs, made and floated</h2><div class="ph"><figure><img loading="lazy" src="img/01-finished.jpg" width="1200" height="900" alt="A finished krathong: banana-trunk base, a band of folded leaf petals, orchids and chrysanthemums, pinned together."><figcaption>A finished krathong: banana-trunk base, a band of folded leaf petals, orchids and chrysanthemums, pinned together. <a href="https://commons.wikimedia.org/wiki/File:A_hand-made_Loi_Krathong.jpg">Rugops</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption></figure><figure><img loading="lazy" src="img/02-folding-onto-trunk.jpg" width="1200" height="900" alt="Folding banana-leaf petals onto a slice of trunk, 2005."><figcaption>Folding banana-leaf petals onto a slice of trunk, 2005. <a href="https://commons.wikimedia.org/wiki/File:Loi_krathong0.jpg">The original uploader was Media lib at German Wikipedia.</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption></figure><figure><img loading="lazy" src="img/03-trunk-slices.jpg" width="1024" height="810" alt="Slices of banana trunk stacked ready to become bases, Koh Samui, 2008."><figcaption>Slices of banana trunk stacked ready to become bases, Koh Samui, 2008. <a href="https://commons.wikimedia.org/wiki/File:Loy_Krathong_2008_DSC01086e.jpg">Per Meistrup</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption></figure><figure><img loading="lazy" src="img/04-leaf-star.jpg" width="1023" height="1200" alt="Folded leaf petals set in a star, with orchids, candle and incense."><figcaption>Folded leaf petals set in a star, with orchids, candle and incense. <a href="https://commons.wikimedia.org/wiki/File:Loi_Krathong_banana_offerings.jpg">Megan Smith</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption></figure><figure><img loading="lazy" src="img/05-from-the-raft.jpg" width="1200" height="901" alt="A family setting lit krathongs on the Ping from a bamboo raft, Chiang Mai, 2015."><figcaption>A family setting lit krathongs on the Ping from a bamboo raft, Chiang Mai, 2015. <a href="https://commons.wikimedia.org/wiki/File:Thai_people_setting_their_candle-lit_krathongs_in_the_Ping_river_at_night_during_Loy_Krathong_2015-10_(22715933524).jpg">John Shedrick from Chiang Mai, Thailand</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption></figure><figure><img loading="lazy" src="img/06-ping-fireworks.jpg" width="1024" height="683" alt="Krathongs on the Ping under fireworks, Chiang Mai, 2014."><figcaption>Krathongs on the Ping under fireworks, Chiang Mai, 2014. <a href="https://commons.wikimedia.org/wiki/File:LoyKrathong2014.jpg">Jonathan144</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption></figure><figure><img loading="lazy" src="img/07-bread.jpg" width="1010" height="775" alt="A bread krathong among lily pads; fish eat it."><figcaption>A bread krathong among lily pads; fish eat it. <a href="https://commons.wikimedia.org/wiki/File:Fish-food_krathong4.JPG">Xufanc</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption></figure><figure><img loading="lazy" src="img/08-krathong-yai.jpg" width="1200" height="795" alt="A big krathong in the Chiang Mai parade, 2017."><figcaption>A big krathong in the Chiang Mai parade, 2017. <a href="https://commons.wikimedia.org/wiki/File:20171104_Loi_Krathong_in_Chiang_Mai_9573_DxO.jpg">Jakub Hałun</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption></figure><figure><img loading="lazy" src="img/09-morning-after.jpg" width="1200" height="900" alt="The morning after: spent krathongs caught against bamboo rafts on the Ping, 2006."><figcaption>The morning after: spent krathongs caught against bamboo rafts on the Ping, 2006. <a href="https://commons.wikimedia.org/wiki/File:Loy_Krathong_the_morning_after_P1010830a.jpg">FredTC</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption></figure><figure><img loading="lazy" src="img/10-coin-collectors.jpg" width="1200" height="823" alt="A few hundred metres downstream, people wade in to take the coins."><figcaption>A few hundred metres downstream, people wade in to take the coins. <a href="https://commons.wikimedia.org/wiki/File:LoyKrathongCoinCollectorsP1010900.jpg">FredTC</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption></figure></div></div></section>
+<section id="words" class="sec"><div class="in"><h2>Words</h2><div class="glos"><div><b>กระทง</b><i>krathong</i><p>the float</p></div><div><b>ลอยกระทง</b><i>loi krathong</i><p>to float a krathong; the festival</p></div><div><b>หยวกกล้วย</b><i>yuak kluai</i><p>banana trunk, the base</p></div><div><b>ใบตอง</b><i>bai tong</i><p>banana leaf</p></div><div><b>กล้วยตานี</b><i>kluai tani</i><p>the banana whose leaf folds best</p></div><div><b>กลีบ</b><i>klip</i><p>petal</p></div><div><b>กลีบกุหลาบ</b><i>klip kulap</i><p>rose petal, folded and rolled</p></div><div><b>กลีบผกา</b><i>klip phaka</i><p>a folded petal, often stacked in threes</p></div><div><b>ตับ</b><i>tap</i><p>a set of three stacked petals</p></div><div><b>หมุด</b><i>mut</i><p>pin</p></div><div><b>ธูป</b><i>thup</i><p>incense stick</p></div><div><b>เทียน</b><i>thian</i><p>candle</p></div><div><b>สะเดาะเคราะห์</b><i>sado khro</i><p>to shed bad luck</p></div><div><b>พระแม่คงคา</b><i>phra mae khongkha</i><p>the mother of water</p></div><div><b>ยี่เป็ง</b><i>yi peng</i><p>full moon of the second Lanna month</p></div><div><b>ลอยโขมด</b><i>loi khamot</i><p>Lanna: floating fire</p></div><div><b>สะเปา</b><i>sapao</i><p>Lanna: a boat-shaped krathong loaded with gifts</p></div><div><b>กระทงหน้อย</b><i>krathong noi</i><p>Lanna: a small krathong</p></div><div><b>กระทงใหญ่</b><i>krathong yai</i><p>a big parade krathong</p></div><div><b>สะพานนวรัฐ</b><i>saphan nawarat</i><p>Nawarat Bridge</p></div></div></div></section>
+<section id="sources" class="sec"><div class="in"><h2>Sources</h2><p>Where the facts on this page come from.</p><ul class="src"><li><a href="https://image.mfa.go.th/mfa/0/pFxDf7ZYQ7/ไฟล์เอกสาร/ข้อมูลลอยกระทง_TH-EN.pdf">กรมส่งเสริมวัฒนธรรม (Department of Cultural Promotion), ลอยกระทง, 2014</a></li><li><a href="https://accl.cmu.ac.th/Knowledge/details/2394">Chiang Mai University, ลอยกระทง (Creative Knowledge), 4 Nov 2021</a></li><li><a href="https://lannainfo.library.cmu.ac.th/lannatradition/yeepeng-comingkratong.php">Chiang Mai University Library, การเข้ามาของประเพณีลอยกระทง</a></li><li><a href="https://www.finearts.go.th/chiangmaimuseum/view/21724">กรมศิลปากร, Chiang Mai National Museum, ประเพณียี่เป็ง, 2020</a></li><li><a href="https://archive.clib.psu.ac.th/online-exhibition/loykratong/page8.html">Prince of Songkla University Library, วิธีการทำกระทง</a></li><li><a href="https://www.thaigoodview.com/knowledge/4403/folding-banana-leaves">ThaiGoodView, การพับใบตองแบบต่าง ๆ, 29 Nov 2009</a></li><li><a href="https://library.tcdc.or.th/record/view/b00032078">TCDC Resource Center, ม้วน พับ จับจีบ เย็บกลีบใบตอง (2012), contents</a></li><li><a href="https://food.dusit.ac.th/main/wp-content/uploads/2023/03/ศิลปะงานใบตอง.pdf">Suan Dusit University, ศิลปะประดิษฐ์กับงานใบตองสด, 2023</a></li><li><a href="https://www.prd.go.th/th/content/category/detail/id/31/iid/510179">กรมประชาสัมพันธ์, ประเพณีลอยกระทง, 2026</a></li><li><a href="https://www.hydro-1.net/main/4-RUNOFF.php">Royal Irrigation Department, hydro-1, station P.1 Nawarat Bridge: monthly flow, rating curves, cross-sections</a></li><li><a href="https://www.botanischer-garten.uni-hamburg.de/01ueber-uns/aktuelle-meldungen/sfb-bananen-pseudostaemme.html">University of Hamburg Botanical Garden, banana pseudostems, 15 Jan 2025</a></li><li><a href="https://www.pptvhd36.com/news/ไลฟ์สไตล์/283924">PPTV, Loy Krathong 2026 date, 2 Oct 2026</a></li><li><a href="https://www.chiangmainews.co.th/news/chiangmai/4138857/">Chiangmai News, ประเพณีเดือนยี่เป็งเชียงใหม่ 2569, 23 Sep 2026</a></li><li><a href="https://www.thansettakij.com/lifestyle/travel-shopping/643212">Thansettakij, Chiang Mai Yi Peng 2025 venues, 4 Nov 2025</a></li><li><a href="https://chiangmai.prd.go.th/th/content/category/detail/id/9/iid/438616">Chiang Mai Public Relations Office, ยี่เป็งริมปิง, 5 Nov 2025</a></li><li><a href="https://www.thairath.co.th/news/local/north/2245311">Thairath, rafts on the Ping for floating, 18 Nov 2021</a></li><li><a href="https://www.chiangmaicitylife.com/citynews/local/the-aftermath-of-loy-krathong/">Chiang Mai CityLife, the aftermath of Loy Krathong (Tha Wang Tan weir), 19 Nov 2013</a></li><li><a href="https://www.thaipbs.or.th/news/content/267445">Thai PBS, Bangkok krathong count 2017, 4 Nov 2017</a></li><li><a href="https://www.thaipbs.or.th/news/content/275875">Thai PBS, Bangkok krathong count 2018, 23 Nov 2018</a></li><li><a href="https://www.thaipbs.or.th/news/content/285980">Thai PBS, Bangkok krathong count 2019, 12 Nov 2019</a></li><li><a href="https://www.thaipbs.or.th/news/content/297939">Thai PBS, Bangkok krathong count 2020, 1 Nov 2020</a></li><li><a href="https://www.sanook.com/news/8476438/">Sanook, Bangkok krathong count 2021, 20 Nov 2021</a></li><li><a href="https://www.infoquest.co.th/?p=249125">InfoQuest, Bangkok krathong count 2022, 9 Nov 2022</a></li><li><a href="https://www.thairath.co.th/news/local/bangkok/2825896">Thairath, Bangkok krathong counts 2023 and 2024, 16 Nov 2024</a></li><li><a href="https://www.pptvhd36.com/news/สังคม/260859">PPTV, Bangkok krathong count 2025, 6 Nov 2025</a></li><li><a href="https://www.khaosodenglish.com/news/bangkok/2016/11/15/bangkok-wakes-less-loy-krathong-mess-usual/">Khaosod English, Bangkok krathong count 2016, 15 Nov 2016</a></li><li><a href="https://www.bangkokpost.com/thailand/general/777357/">Bangkok Post, Bangkok krathong count 2015</a></li><li><a href="https://www.thaipbs.or.th/news/content/321263">Thai PBS, how long krathong materials take to break down, 8 Nov 2022</a></li><li><a href="https://aa.usno.navy.mil/api/moon/phases/year?year=2026">US Naval Observatory, moon phases 2026</a></li></ul></div></section>
+</main><footer class="bot"><div class="in">Krathong, Drawn · text CC BY 4.0 · code MIT · <a href="https://github.com/NaNoBotCo/krathong">GitHub</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://hongdam.net/">hongdam.net</a></div></footer>
+<script>window.UI={"fold_steps": [{"text": "The top of a strip of banana leaf, shiny side up.", "line": null}, {"text": "Fold the top left corner down to the middle line. The fold runs at 45°.", "line": [[-0.5, 1.2], [0, 1.7]]}, {"text": "Fold the top right corner down to meet it. The tip is now a right angle, 90°.", "line": [[0, 1.7], [0.5, 1.2]]}, {"text": "Fold the left half over onto the right. The tip closes to 45°, four layers thick near the point.", "line": [[0, 0], [0, 1.7]]}], "petals_per_leaf": 1, "coin_g": 3, "b_sunk": "The water comes over the top.", "b_tips": "Floats, but tips over: G is above M.", "b_ok": "Floats upright.", "counts": [[2015, 754587, 71027, 0], [2016, 617901, 44034, 0], [2017, 760019, 51926, 0], [2018, 796444, 44883, 0], [2019, 483264, 18760, 0], [2020, 474806, 17731, 0], [2021, 388954, 14281, 0], [2022, 548086, 24516, 0], [2023, 618951, 20877, 0], [2024, 506320, 8270, 0], [2025, 323626, 28298, 39103]], "lang": "en"};</script>
+<script src="krathong.js"></script><script src="app.js"></script><script src="top.js"></script>
+</body></html>
