@@ -1,0 +1,102 @@
+# Krathong, Drawn · กระทง วาดด้วยคณิต
+
+How a krathong is folded from banana leaf, why it floats and stays upright, and where the Ping carries it after Loy Krathong, drawn with math.
+
+English: https://motdang.net/sites/krathong/
+Thai: https://motdang.net/sites/krathong/th/
+
+## A lotus of leaf on a slice of trunk
+
+The old base is a slice of banana trunk, หยวกกล้วย yuak kluai, cut about 1.5 to 2 inches thick. Strips of banana leaf, ใบตอง bai tong, are folded into petals and pinned round its rim. The best leaf for folding is from กล้วยตานี, kluai tani: glossy, dark green, tough and soft, hard to tear. On top go flowers, a candle and three sticks of incense. Some people add coins, or a cut fingernail or a few hairs to shed bad luck.
+The Department of Cultural Promotion lists the reasons people give for floating one: to honour the Buddha's footprint on the sandbank of the Narmada river in India; to thank Phra Mae Khongkha, the mother of water, and ask her pardon for using and dirtying it; to float bad luck away; to make a wish; to remember the dead. The story of Nang Noppamat, who folded the first leaf krathong for Phra Ruang of Sukhothai, comes from a book that Prince Damrong dated to the reign of Rama III.
+In Lanna the night is Yi Peng, the full moon of the second Lanna month. Chiang Mai's National Museum tells of loi khamot, floating fire: Mon people of Hariphunchai, about 1,000 years ago, floated flowers, candles and goods in boat-shaped sapao down the Ping to remember kin they had left in Pegu. Princess Dara Rasmi floated candles on coconut-husk boats in Chiang Mai around 1917–1927; the leaf krathong caught on after 1947, and from 1969 the big-krathong parade has run to Nawarat Bridge.
+
+## Three folds make a point
+
+A strip of banana leaf about 1.5 inches (3.8 cm) wide. Fold the two top corners down so their edges meet in the middle, then fold it in half: this is how a กลีบกุหลาบ, klip kulap or rose petal, begins. Each fold turns part of the leaf over a straight line, half a turn, so it lands face down on the rest.
+
+## How many petals go round
+
+Petals go round the base in rings, each tucked into the next. How many depends on the size of the base. The rim of a ring is 2πr long, and each petal takes up its width less the part hidden under its neighbour. Each ring here sits a little inside the one below and half a petal round, so the points of one ring fall between the points of the next, as they do in photographs of krathongs.
+
+## Down until it has pushed aside its own weight
+
+A krathong sinks into the river until the water it pushes aside weighs as much as the krathong. For a round base that gives the depth at the waterline. What is left of the base above the water is how much more it can carry.
+Floating is half of it. It also has to stay upright. Tip it a little and the water under it shifts to the low side, pushing back. That push acts through a point called the metacentre, M. While M sits above the centre of all the krathong's weight, G, it rights itself.
+
+## Fast in the middle, slow at the banks
+
+Water drags on the riverbed and the banks, so it runs fastest in the middle of the river and slowest at the edges. Sixty krathongs, let go from one bank, wander out into the current a little at a time. Some get caught where the water barely moves.
+
+## Counted the next day
+
+Bangkok counts the krathongs it pulls out of its rivers and canals the next morning. In 2015 it collected 825,614; in 2025, 391,027, 53% fewer. Foam was 8.6% of the count in 2015 and its lowest share, 1.6%, came in 2024.
+
+## Tuesday 24 November
+
+Loy Krathong 2026 falls on Tuesday 24 November, the fifteenth night of the waxing moon of the twelfth month. Chiang Mai city's Yi Peng runs 23 to 25 November:
+
+## Dates
+
+- Mon 23 Nov: the city's Yi Peng begins
+- Tue 24 Nov: full moon, 21:53; Loy Krathong
+- Wed 25 Nov: the big-krathong parade
+
+## Words
+
+- กระทง (krathong): the float
+- ลอยกระทง (loi krathong): to float a krathong; the festival
+- หยวกกล้วย (yuak kluai): banana trunk, the base
+- ใบตอง (bai tong): banana leaf
+- กล้วยตานี (kluai tani): the banana whose leaf folds best
+- กลีบ (klip): petal
+- กลีบกุหลาบ (klip kulap): rose petal, folded and rolled
+- กลีบผกา (klip phaka): a folded petal, often stacked in threes
+- ตับ (tap): a set of three stacked petals
+- หมุด (mut): pin
+- ธูป (thup): incense stick
+- เทียน (thian): candle
+- สะเดาะเคราะห์ (sado khro): to shed bad luck
+- พระแม่คงคา (phra mae khongkha): the mother of water
+- ยี่เป็ง (yi peng): full moon of the second Lanna month
+- ลอยโขมด (loi khamot): Lanna: floating fire
+- สะเปา (sapao): Lanna: a boat-shaped krathong loaded with gifts
+- กระทงหน้อย (krathong noi): Lanna: a small krathong
+- กระทงใหญ่ (krathong yai): a big parade krathong
+- สะพานนวรัฐ (saphan nawarat): Nawarat Bridge
+
+## Sources
+
+- กรมส่งเสริมวัฒนธรรม (Department of Cultural Promotion), ลอยกระทง, 2014: https://image.mfa.go.th/mfa/0/pFxDf7ZYQ7/ไฟล์เอกสาร/ข้อมูลลอยกระทง_TH-EN.pdf
+- Chiang Mai University, ลอยกระทง (Creative Knowledge), 4 Nov 2021: https://accl.cmu.ac.th/Knowledge/details/2394
+- Chiang Mai University Library, การเข้ามาของประเพณีลอยกระทง: https://lannainfo.library.cmu.ac.th/lannatradition/yeepeng-comingkratong.php
+- กรมศิลปากร, Chiang Mai National Museum, ประเพณียี่เป็ง, 2020: https://www.finearts.go.th/chiangmaimuseum/view/21724
+- Prince of Songkla University Library, วิธีการทำกระทง: https://archive.clib.psu.ac.th/online-exhibition/loykratong/page8.html
+- ThaiGoodView, การพับใบตองแบบต่าง ๆ, 29 Nov 2009: https://www.thaigoodview.com/knowledge/4403/folding-banana-leaves
+- TCDC Resource Center, ม้วน พับ จับจีบ เย็บกลีบใบตอง (2012), contents: https://library.tcdc.or.th/record/view/b00032078
+- Suan Dusit University, ศิลปะประดิษฐ์กับงานใบตองสด, 2023: https://food.dusit.ac.th/main/wp-content/uploads/2023/03/ศิลปะงานใบตอง.pdf
+- กรมประชาสัมพันธ์, ประเพณีลอยกระทง, 2026: https://www.prd.go.th/th/content/category/detail/id/31/iid/510179
+- Royal Irrigation Department, hydro-1, station P.1 Nawarat Bridge: monthly flow, rating curves, cross-sections: https://www.hydro-1.net/main/4-RUNOFF.php
+- University of Hamburg Botanical Garden, banana pseudostems, 15 Jan 2025: https://www.botanischer-garten.uni-hamburg.de/01ueber-uns/aktuelle-meldungen/sfb-bananen-pseudostaemme.html
+- PPTV, Loy Krathong 2026 date, 2 Oct 2026: https://www.pptvhd36.com/news/ไลฟ์สไตล์/283924
+- Chiangmai News, ประเพณีเดือนยี่เป็งเชียงใหม่ 2569, 23 Sep 2026: https://www.chiangmainews.co.th/news/chiangmai/4138857/
+- Thansettakij, Chiang Mai Yi Peng 2025 venues, 4 Nov 2025: https://www.thansettakij.com/lifestyle/travel-shopping/643212
+- Chiang Mai Public Relations Office, ยี่เป็งริมปิง, 5 Nov 2025: https://chiangmai.prd.go.th/th/content/category/detail/id/9/iid/438616
+- Thairath, rafts on the Ping for floating, 18 Nov 2021: https://www.thairath.co.th/news/local/north/2245311
+- Chiang Mai CityLife, the aftermath of Loy Krathong (Tha Wang Tan weir), 19 Nov 2013: https://www.chiangmaicitylife.com/citynews/local/the-aftermath-of-loy-krathong/
+- Thai PBS, Bangkok krathong count 2017, 4 Nov 2017: https://www.thaipbs.or.th/news/content/267445
+- Thai PBS, Bangkok krathong count 2018, 23 Nov 2018: https://www.thaipbs.or.th/news/content/275875
+- Thai PBS, Bangkok krathong count 2019, 12 Nov 2019: https://www.thaipbs.or.th/news/content/285980
+- Thai PBS, Bangkok krathong count 2020, 1 Nov 2020: https://www.thaipbs.or.th/news/content/297939
+- Sanook, Bangkok krathong count 2021, 20 Nov 2021: https://www.sanook.com/news/8476438/
+- InfoQuest, Bangkok krathong count 2022, 9 Nov 2022: https://www.infoquest.co.th/?p=249125
+- Thairath, Bangkok krathong counts 2023 and 2024, 16 Nov 2024: https://www.thairath.co.th/news/local/bangkok/2825896
+- PPTV, Bangkok krathong count 2025, 6 Nov 2025: https://www.pptvhd36.com/news/สังคม/260859
+- Khaosod English, Bangkok krathong count 2016, 15 Nov 2016: https://www.khaosodenglish.com/news/bangkok/2016/11/15/bangkok-wakes-less-loy-krathong-mess-usual/
+- Bangkok Post, Bangkok krathong count 2015: https://www.bangkokpost.com/thailand/general/777357/
+- Thai PBS, how long krathong materials take to break down, 8 Nov 2022: https://www.thaipbs.or.th/news/content/321263
+- US Naval Observatory, moon phases 2026: https://aa.usno.navy.mil/api/moon/phases/year?year=2026
+
+## Licence
+
+Text CC BY 4.0, NaNoBotCo. Code MIT. Photographs keep their own licences, listed on the page.

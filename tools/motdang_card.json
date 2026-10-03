@@ -1,0 +1,14 @@
+{
+ "th": "กระทง วาดด้วยคณิต",
+ "en": "Krathong, Drawn",
+ "line_th": "กระทงวาดด้วยคณิต พับกลีบใบตอง กลีบเรียงเป็นวง ทำไมลอยน้ำได้และไม่คว่ำ แม่น้ำปิงพากระทงไปไหน และเช้าวันรุ่งขึ้นเก็บได้กี่ใบ",
+ "line_en": "the Loy Krathong float drawn with math: folding a banana-leaf petal, rings of petals, why it floats and stays upright, where the Ping carries it, and the count the morning after",
+ "icon": "i-lotus",
+ "shipped": "2026-10-03",
+ "season": ["10-01", "11-30"],
+ "group": "wat",
+ "where": "cm",
+ "served": "docs",
+ "shelves": ["wat"],
+ "words": ["krathong", "kratong", "loy krathong", "loi krathong", "yi peng", "festival", "banana leaf", "folding", "float", "floating", "ping river", "river", "กระทง", "ลอยกระทง", "ใบตอง", "หยวกกล้วย", "พับกลีบ", "กลีบกระทง", "แม่น้ำปิง", "ยี่เป็ง"]
+}
