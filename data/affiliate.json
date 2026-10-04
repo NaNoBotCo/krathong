@@ -1,0 +1,13 @@
+{
+ "_what": "Paid links, written by affiliate-slots/sync.py from slots.json. Edit there, not here. A slot with url null renders nothing.",
+ "slots": {
+  "kt-yipeng": {
+   "brand": "Klook",
+   "url": "https://klook.tpx.li/cTRLZEBu",
+   "en": "Yi Peng tickets · Klook",
+   "th": "บัตรงานยี่เป็ง · Klook"
+  }
+ },
+ "label_en": "Paid link: this site earns a fee if you book.",
+ "label_th": "ลิงก์มีค่าตอบแทน: เว็บนี้ได้ค่าแนะนำเมื่อคุณจองผ่านลิงก์นี้"
+}
