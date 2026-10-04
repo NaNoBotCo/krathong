@@ -48,7 +48,7 @@ UI["en"].update({
     "b_g": "G, centre of weight", "b_m": "M, metacentre",
     "b_ok": "Floats upright.", "b_tips": "Floats, but tips over: G is above M.", "b_sunk": "The water comes over the top.",
     "coin_g": 3,
-    "fl_p2": ["A wide base is very hard to tip: the r² in the sum grows fast. A narrow base with a tall candle is the one that rolls over."],
+    "fl_p2": ["A wide base is very hard to tip: the r² in the sum grows fast. A narrow base with a tall candle is the one that rolls over."],  # stylecheck: allow — "tip" is the float tipping over, physics
     "fl_note": "FACTS-PENDING",
     "rho_default": 600,
     "rv_kick": "Downstream", "rv_h": "Fast in the middle, slow at the banks",
