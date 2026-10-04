@@ -26,6 +26,18 @@ CSS = open(os.path.join(HERE, "site.css")).read()
 GOOGLE_ESCAPE = '<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>'
 
 
+AFF = json.load(open(os.path.join(HERE, "..", "data", "affiliate.json"), encoding="utf-8"))
+
+
+def paid(slot, lang):
+    """A paid link from data/affiliate.json (written by affiliate-slots/sync.py); a null url renders nothing."""
+    s = AFF["slots"].get(slot) or {}
+    if not s.get("url"):
+        return ""
+    return (f'<p><a href="{E(s["url"])}" rel="sponsored nofollow noopener" target="_blank">{E(s[lang])}</a>'
+            f' <small class="paid">{E(AFF["label_" + lang])}</small></p>')
+
+
 def paras(ps):
     return "".join(f"<p>{p}</p>" for p in ps)
 
@@ -121,7 +133,7 @@ def page(lang, md=False):
 ''' if u["counts"] else ""
     dates = "".join(f'<div><b>{E(a)}</b><span>{b}</span></div>' for a, b in u["dates"])
     yp = f'''<section id="yipeng" class="sec"><div class="in"><p class="kick">{E(u["yp_kick"])}</p><h2>{E(u["yp_h"])}</h2>{paras(u["yp_p"])}
-<div class="dates">{dates}</div>{paras(u["yp_p2"])}
+<div class="dates">{dates}</div>{paid("kt-yipeng", lang)}{paras(u["yp_p2"])}
 <a class="sib" href="{sib}"><img src="{sibicon}" width="48" height="48" alt=""><span><b>{E(u["sib_h"])}</b>{E(u["sib_p"])}</span></a></div></section>
 '''
     figs = []
