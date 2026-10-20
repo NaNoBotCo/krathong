@@ -1,0 +1,10 @@
+{
+ "./": {
+  "alt": "Card: Krathong, Drawn",
+  "image": "og/index.jpg"
+ },
+ "th/": {
+  "alt": "Card: กระทง วาดด้วยคณิต, Krathong, Drawn",
+  "image": "og/th.jpg"
+ }
+}
