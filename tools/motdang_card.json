@@ -10,5 +10,6 @@
  "where": "cm",
  "served": "docs",
  "shelves": ["wat"],
- "words": ["krathong", "kratong", "loy krathong", "loi krathong", "yi peng", "festival", "banana leaf", "folding", "float", "floating", "ping river", "river", "กระทง", "ลอยกระทง", "ใบตอง", "หยวกกล้วย", "พับกลีบ", "กลีบกระทง", "แม่น้ำปิง", "ยี่เป็ง"]
+ "words": ["krathong", "kratong", "loy krathong", "loi krathong", "yi peng", "festival", "banana leaf", "folding", "float", "floating", "ping river", "river", "กระทง", "ลอยกระทง", "ใบตอง", "หยวกกล้วย", "พับกลีบ", "กลีบกระทง", "แม่น้ำปิง", "ยี่เป็ง"],
+ "festivals": ["yi-peng-loi-krathong"]
 }
